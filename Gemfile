@@ -36,6 +36,9 @@ gem 'jbuilder', '~> 2.5'
 # font-end
 gem 'font-awesome-rails'
 
+# i18n
+gem "rails-i18n"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
@@ -43,7 +46,8 @@ group :development, :test do
   gem 'capybara', '~> 2.13'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.5'
-
+  gem 'faker'
+  
   # for better display
   gem 'awesome_print', git: 'https://github.com/awesome-print/awesome_print.git', branch: 'master'
 

@@ -16,11 +16,12 @@
     <div class="nav-right nav-menu">
 
       <!--  todo: 加上連結 -->
-      <a class="nav-item is-tab is-active">店家資訊</a>
-      <a class="nav-item is-tab">提議</a>
-      <a class="nav-item is-tab">歷史資訊</a>
-      <a class="nav-item is-tab">帳戶管理</a>
-
+      <a class="nav-item is-tab is-active"><%= t("nav_bar.store_info") %></a>
+      <a class="nav-item is-tab"><%= t("nav_bar.propose") %></a>
+      <a class="nav-item is-tab"><%= t("nav_bar.history_info") %></a>
+      <a class="nav-item is-tab"><%= t("nav_bar.account_management") %></a>
+      <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh_TW" %> |
+      <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
     </div>
   </div>
 </nav>

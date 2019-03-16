@@ -30,4 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  nav_bar:
+    store_info: "Stores"
+    propose: "Propose"
+    history_info: "History"
+    account_management: "Account"
+
