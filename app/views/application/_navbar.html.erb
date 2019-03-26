@@ -3,10 +3,9 @@
     <div class="nav-left">
 
       <!-- todo: 加上連結 -->
-      <a class="nav-item">
+      <%= link_to root_path, class: 'nav-item' do %>
         <%= image_tag 'logo', alt: 'Buy Together Logo' %>
-      </a>
-
+      <% end %>
     </div>
     <span class="nav-toggle">
       <span></span>
@@ -16,10 +15,10 @@
     <div class="nav-right nav-menu">
 
       <!--  todo: 加上連結 -->
-      <a class="nav-item is-tab is-active"><%= t("nav_bar.store_info") %></a>
-      <a class="nav-item is-tab"><%= t("nav_bar.propose") %></a>
-      <a class="nav-item is-tab"><%= t("nav_bar.history_info") %></a>
-      <a class="nav-item is-tab"><%= t("nav_bar.account_management") %></a>
+      <%= link_to t("nav_bar.store_info"), stores_path, class: 'nav-item is-tab is-active' %>
+      <%= link_to t("nav_bar.propose"), stores_path, class: 'nav-item is-tab is-active' %>
+      <%= link_to t("nav_bar.history_info"), stores_path, class: 'nav-item is-tab is-active' %>
+      <%= link_to t("nav_bar.account_management"), stores_path, class: 'nav-item is-tab is-active' %>
       <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh_TW" %> |
       <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
     </div>
