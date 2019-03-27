@@ -1,6 +1,28 @@
 zh_TW:
   nav_bar:
-    store_info: "店家資訊"
-    propose: "提議"
-    history_info: "歷史資訊"
-    account_management: "帳戶管理"
+    store_info: 店家資訊
+    propose: 提議
+    history_info: 歷史資訊
+    account_management: 帳戶管理
+  activerecord:
+    errors:
+      models:
+        store:
+          attributes:
+            name:
+              blank: 名稱不得為空
+              too_long: 名稱必須小於 10 個字元
+            phone:
+              blank: 電話不得為空
+            address:
+              blank: 地址不得為空
+            description:
+              blank: 描述不得為空
+        item:
+          attributes:
+            name:
+              blank: 名稱不得為空
+            price:
+              blank: 價格不得為空
+            image:
+              blank: 必須上傳圖片

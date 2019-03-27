@@ -39,6 +39,9 @@ gem 'font-awesome-rails'
 # i18n
 gem "rails-i18n"
 
+# image management
+gem 'carrierwave', '~> 1.0'
+
 # simple_form
 gem 'simple_form'
 

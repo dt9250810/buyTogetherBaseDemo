@@ -31,8 +31,22 @@
 
 en:
   nav_bar:
-    store_info: "Stores"
-    propose: "Propose"
-    history_info: "History"
-    account_management: "Account"
+    store_info: Stores
+    propose: Propose
+    history_info: History
+    account_management: Account
+  activerecord:
+    errors:
+      models:
+        store:
+          attributes:
+            name:
+              blank: name can't be blank
+              too_long: name's length can't over 10 words
+            phone:
+              blank: phone can't be blank
+            address:
+              blank: address can't be blank
+            description:
+              blank: description can't be blank
 

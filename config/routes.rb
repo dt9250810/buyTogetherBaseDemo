@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   root 'pages#homepage'
   
-  resources :stores
+  resources :stores do
+    resources :items
+  end
   
   # get   '/stores' => 'stores#index'
   # get   '/stores/new' => 'stores#new', as: 'new_store'
