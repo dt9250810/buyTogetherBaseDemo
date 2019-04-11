@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'pages#homepage'
   
   resources :stores do
     resources :items
   end
   
+  resources :purchases do
+    resources :orders
+  end
+
   # get   '/stores' => 'stores#index'
   # get   '/stores/new' => 'stores#new', as: 'new_store'
   # post  '/stores' => 'stores#create'
