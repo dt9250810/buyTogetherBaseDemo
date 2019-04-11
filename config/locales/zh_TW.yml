@@ -4,6 +4,8 @@ zh_TW:
     propose: 提議
     history_info: 歷史資訊
     account_management: 帳戶管理
+    sign_out: 登出
+    sign_in: 登入
   activerecord:
     errors:
       models:
@@ -26,3 +28,13 @@ zh_TW:
               blank: 價格不得為空
             image:
               blank: 必須上傳圖片
+  date:
+    order: [ !ruby/symbol day, !ruby/symbol month, !ruby/symbol year ]
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+    day_names: [星期一, 星期二, 星期三, 星期四, 星期五, 星期六, 星期日]
+    #abbr_day_names: [P, U, S, C, Pt, S, N]
+    month_names: [~, 一月, 二月, 三月, 四月, 五月, 六月, 七月, 八月, 九月, 十月, 十一月, 十二月]
+    #abbr_month_names: [~, Jan, Feb, Mar, Apr, Maj, Jun, Jul, Aug, Sep, Okt, Nov, Dec]

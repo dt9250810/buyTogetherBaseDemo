@@ -16,10 +16,16 @@
 
       <!--  todo: 加上連結 -->
       <%= link_to t("nav_bar.store_info"), stores_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to t("nav_bar.propose"), stores_path, class: 'nav-item is-tab is-active' %>
+      <%= link_to t("nav_bar.propose"), new_purchase_path, class: 'nav-item is-tab is-active' %>
       <%= link_to t("nav_bar.history_info"), stores_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to t("nav_bar.account_management"), stores_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to "中文版", :controller => controller_name, :action => action_name, :locale => "zh_TW" %> |
+      <%= link_to t("nav_bar.account_management"), edit_user_registration_path, class: 'nav-item is-tab is-active' %>
+      <% if current_user %>
+        <%= link_to t("nav_bar.sign_out"), destroy_user_session_path, method: :delete, class: 'nav-item is-tab' %>
+      <% else %>
+        <%= link_to t("nav_bar.sign_in"), new_user_session_path, class: 'nav-item is-tab'  %>
+      <% end %>
+
+      <%= link_to "中文", :controller => controller_name, :action => action_name, :locale => "zh_TW" %> |
       <%= link_to "English", :controller => controller_name, :action => action_name, :locale => "en" %>
     </div>
   </div>

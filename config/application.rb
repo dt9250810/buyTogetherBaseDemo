@@ -17,5 +17,8 @@ module BuyTogetherBase
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
+
+    # 設定伺服器時區
+    config.time_zone = 'Taipei'
   end
 end

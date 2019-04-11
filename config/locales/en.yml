@@ -35,6 +35,8 @@ en:
     propose: Propose
     history_info: History
     account_management: Account
+    sign_out: SignOut
+    sign_in: SignIn
   activerecord:
     errors:
       models:
@@ -49,4 +51,13 @@ en:
               blank: address can't be blank
             description:
               blank: description can't be blank
-
+  date:
+    order: [ !ruby/symbol day, !ruby/symbol month, !ruby/symbol year ]
+    formats:
+      default: "%Y-%m-%d"
+      short: "%b %d"
+      long: "%B %d, %Y"
+    day_names: [Ponedjeljak, Utorak, Srijeda, Cetvrtak, Petak, Subota, Nedjelja]
+    #abbr_day_names: [P, U, S, C, Pt, S, N]
+    month_names: [~, Januar, Februar, Mart, April, Maj, Juni, Juli, August, Septembar, Octobar, Novembar, Decembar]
+    #abbr_month_names: [~, Jan, Feb, Mar, Apr, Maj, Jun, Jul, Aug, Sep, Okt, Nov, Dec]
