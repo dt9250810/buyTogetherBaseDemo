@@ -15,10 +15,10 @@
     <div class="nav-right nav-menu">
 
       <!--  todo: 加上連結 -->
-      <%= link_to t("nav_bar.store_info"), stores_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to t("nav_bar.propose"), new_purchase_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to t("nav_bar.history_info"), stores_path, class: 'nav-item is-tab is-active' %>
-      <%= link_to t("nav_bar.account_management"), edit_user_registration_path, class: 'nav-item is-tab is-active' %>
+      <%= link_to t("nav_bar.store_info"), stores_path, class: 'nav-item is-tab ' + "#{'is-active' if controller.controller_name == 'stores'}" %>
+      <%= link_to t("nav_bar.propose"), new_purchase_path, class: 'nav-item is-tab ' + "#{' is-active' if controller.controller_name == 'purchases'}" %>
+      <%= link_to t("nav_bar.history_info"), stores_path, class: 'nav-item is-tab ' + "#{' is-active' if controller.controller_name == ''}" %>
+      <%= link_to t("nav_bar.account_management"), edit_user_registration_path, class: 'nav-item is-tab ' + + "#{' is-active' if current_page?(edit_user_registration_path)}" %>
       <% if current_user %>
         <%= link_to t("nav_bar.sign_out"), destroy_user_session_path, method: :delete, class: 'nav-item is-tab' %>
       <% else %>
