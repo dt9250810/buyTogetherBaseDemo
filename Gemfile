@@ -40,7 +40,7 @@ gem 'font-awesome-rails'
 gem "rails-i18n"
 
 # image management
-gem 'carrierwave', '~> 1.0'
+gem 'carrierwave', '~> 1.3'
 
 # simple_form
 gem 'simple_form'
